@@ -1,0 +1,26 @@
+
+        table {
+            border-collapse: collapse;
+            /* thu hẹp đường viền */
+            width: 100%;
+            /* chiều rộng */
+        }
+
+        th, td {
+            text-align: left;
+            /* vị trí chữ bên trái */
+            padding: 8px;
+            /* làm dày thêm */
+        }
+
+        tr:nth-child(even) {
+        /* các thẻ tr chẵn */
+            background-color: #f2f2f2
+            /* màu nền */
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            /* màu chữ */
+        }
