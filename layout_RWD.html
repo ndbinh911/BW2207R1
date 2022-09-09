@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tạo layout với RWD</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #header {
+            width: 100%;
+            display: inline-block;
+            background-color: #222222;
+        }
+        #header li {
+            list-style: none;
+            float: left;
+            padding: 14px;
+        }
+        #header li a {
+            text-decoration: none;
+            color: #ccc;
+        }
+        #header li:hover,
+        #header div:hover {
+            background-color: #000;
+            cursor: pointer;
+        }
+        #slider_left {
+            text-align: center;
+            background-color: #f1f1f1;
+            float: left;
+            width: 30%;
+            height: 500px;
+        }
+        #slider_center {
+            float: left;
+            width: 50%;
+        }
+        #slider_right {
+            float: left;
+            background-color: #f1f1f1;
+            height: 500px;
+            width: 20%;
+        }
+        #slider_right div {
+            border: 1px solid;
+            height: 60px;
+            max-width: 140px;
+            text-align: center;
+            margin: 30px 114px;
+            vertical-align: middle;
+        }
+        #footer {
+            color: #fff;
+            background-color: #555555;
+            clear: both;
+            text-align: center;
+            height: 50px;
+            line-height: 46px;
+        }
+        @media screen and (max-width: 700px) {
+            #slider_right div {
+                margin: 30px 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li>
+                <a href="">Logo</a>
+            </li>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Projects</a>
+            </li>
+            <li>
+                <a href="">Contract</a>
+            </li>
+        </ul>
+        <div style="float: right;; padding: 14px;">
+            <a href="" style="text-decoration: none; color: #ccc">Login</a>
+        </div>
+    </div>
+
+    <div id="slider_left">
+        <div style="margin-top: 20px; "><a href="" style="color: #1c2f96; text-decoration: none;">Link</a></div>
+        <div style="margin-top: 20px;"><a href="" style="color: #1c2f96; text-decoration: none;">Link</a></div>
+        <div style="margin-top: 20px;"><a href="" style="color: #1c2f96; text-decoration: none;">Link</a></div>
+    </div>
+    <div id="slider_center">
+        <div style="margin: 10px 26px;">
+            <h1 style="margin-top: 16px;">Welcome</h1>
+            <div style="margin-top: 6px;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <h1 style="margin-top: 60px;">Test</h1>
+            <div style="margin-top: 6px;">Lorem ipsum...</div>
+        </div>
+    </div>
+    <div id="slider_right">
+        <div>ADS</div>
+        <div>ADS</div>
+    </div>
+    <div id="footer">
+        Footer text
+    </div>
+</body>
+</html>
