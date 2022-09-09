@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .img1 {
+            margin: 0 6px;
+            width: 24%;
+            float: left;
+        }
+        .img2 {
+            margin: 0 6px;
+            width: 24%;
+            float: left;
+        }
+        .img3 {
+            margin: 0 6px;
+            width: 24%;
+            float: left;
+        }
+        .img4 {
+            margin: 0 6px;
+            width: 24%;
+            float: left;
+        }
+        @media screen and (max-width: 700px) {
+            .img1 {
+                margin: 0 6px;
+                width: 48%;
+                float: left;
+            }
+            .img2 {
+                margin: 0 6px;
+                width: 48%;
+                float: left;
+            }
+            .img3 {
+                margin: 0 6px;
+                width: 48%;
+                float: left;
+            }
+            .img4 {
+                margin: 0 6px;
+                width: 48%;
+                float: left;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .img1 {
+                margin: 0 6px;
+            }
+            .img2 {
+                margin: 0 6px;
+            }
+            .img3 {
+                margin: 0 6px;
+            }
+            .img4 {
+                margin: 0 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <div>Resize the browser window to see the effect.</div>
+    <div class="img1">
+        <img src="https://img.uhdpaper.com/wallpaper/lisa-blackpink-kpop-idol-312@0@g-thumb.jpg?dl-thumb.jpg?dl" alt="" width="100%">
+    </div>
+    <div class="img2">
+        <img src="https://img.uhdpaper.com/wallpaper/jisoo-blackpink-kpop-idol-322@0@g-thumb.jpg?dl-thumb.jpg?dl" alt="" width="100%">
+    </div>
+    <div class="img3">
+        <img src="https://img.uhdpaper.com/wallpaper/rose-blackpink-pink-venom-mv-90@1@i-thumb.jpg?dl-thumb.jpg?dl" alt="" width="100%">
+    </div>
+    <div class="img4">
+        <img src="https://img.uhdpaper.com/wallpaper/jennie-blackpink-pink-venom-6@1@i-thumb.jpg?dl" alt="" width="100%">
+    </div>
+    <div style="clear: both;">This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</div>
+</body>
+</html>
